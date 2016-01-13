@@ -1,0 +1,14 @@
+题目：
+You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+Output: 7 -> 0 -> 8
+
+题目理解：
+	1. 两个链表，每个节点只能存一位数字，对应相加，过10则进位到下一个节点。
+	2. 两个链表长度有可能不一样，这时以长链表的值作为结果
+
+难：
+	时间一直降不下来，4ms
+	即使不为结果分配新的节点，而复用L1或L2的，时间还是4ms
+	看论坛里有人说，这个时间跟网络状况有关，现在还不清楚到底是不是这个原因
