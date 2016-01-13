@@ -1,0 +1,15 @@
+题目：
+	Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.
+
+	Subscribe to see which companies asked this question
+
+题目理解：
+	求一个字符串不含重复字符的最长子字符串
+	两种方法：
+	1. 循环遍历以每个字符开头子串，计算这时的最长子串，超时了。。
+	2. 用一个数组来保存每个字符上次出现的位置，若当前字符的上次出现位置也在当前子串中，则当前子串结束，下一个子串开始。
+
+难点：
+	第一种方法，可以用stringBuilder来临时保存字符串，但是这样会需要一个嵌套的双层循环，亲测会超时。
+	第二种方法，控制好索引值比较烦，0啊，1啊，我嘞个去。。
+	
