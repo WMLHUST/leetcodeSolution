@@ -1,0 +1,9 @@
+题目：
+	There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
+题目理解：
+	有两个排好顺序的数组（链表），找出两者的中位数，两者一起的哦。比如[1, 2, 3]和[4, 5, 6]的中位数是3.5，同时，时间复杂度是 O(log (m+n)).
+	我的想法是，利用数组已经排好顺序这一点，每次找出下一个较大的数，循环 (m+n)/2次，但是时间复杂度不是O(log(m+n)哎，不晓得
+	其次，验证了上次的一个想法，运行时间不只跟代码有关，同一份代码，一次跑6ms，一次跑5ms。
+难点：
+	这个办法真笨啊，而且还不好写，那个情况多的简直了
+	待我看到好的办法，贴上来。
