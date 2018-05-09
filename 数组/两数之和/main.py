@@ -14,7 +14,9 @@ def twoSum(nums, target):
         if tmp not in L:
             L[nums[i]] = i
         else:
-            return [i, L[tmp]]
+            # 先存进去的说明在前面
+            return [L[tmp], i]
+
 
 nums = [2, 7, 11, 15]
 nums = [3,2,4]
