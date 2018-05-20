@@ -10,13 +10,16 @@ class Solution:
         :type head: ListNode
         :rtype: ListNode
         """
-        if head.next is None:
+        if head is None or head.next is None:
             return head
 
         cur = head
-        third = cur.next.next
-        cur.next.next = cur
-        res = self.reverseList(cur.ne)
+        next = cur.next
+
+        res = self.reverseList(next)
+
+        cur.next = None
+        next.next = cur
 
         return res
 
