@@ -8,22 +8,17 @@ class Solution:
         :type n: int
         :rtype: int
         """
-
-        if n < 2:
+        if n <= 2:
             return 0
 
-        res = 0
-        for i in range(3, n):
-            cnt = int(math.sqrt(i))
-            is_prime = True
-            for j in range(2, cnt+1):
-                if i % j == 0:
-                    is_prime = False
-                    break
+        cache = [True] * n
+        cache[0] = False
+        cache[1] = False
+        for i in range(2, n):
+            if cache[i] == True:
+                cache[i+i:n:i] = [False] * len(cache[i+i:n:i])
+        return sum(cache)
 
-            if is_prime:
-                res += 1
+print(Solution().countPrimes(499979))
 
-        return res + 1
 
-print(Solution().countPrimes(10))
