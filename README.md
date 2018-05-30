@@ -1,2 +1,2 @@
 # leetcodeSolution
-leetcode题解及个人心得
+leetcode记录
