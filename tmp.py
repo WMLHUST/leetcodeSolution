@@ -4,6 +4,8 @@ def func(tmp, n):
     tmp = tmp[:2]
     n = 2
 
-tmp = [0, 0, 0]
-func(tmp, 0)
-print(tmp)
+
+i=1
+if i==0:
+    j = 2
+print(j)
