@@ -9,3 +9,4 @@ l2 = [4, 5, 6]
 x = 4
 if x not in l1 and x not in l2:
     print(True)
+
