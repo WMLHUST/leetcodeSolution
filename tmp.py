@@ -4,6 +4,8 @@ def func(tmp, n):
     tmp = tmp[:2]
     n = 2
 
-tmp = [0, 0, 0]
-func(tmp, 0)
-print(tmp)
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+x = 4
+if x not in l1 and x not in l2:
+    print(True)
