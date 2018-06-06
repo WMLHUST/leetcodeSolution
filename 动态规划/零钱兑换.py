@@ -5,26 +5,17 @@ class Solution(object):
         :type amount: int
         :rtype: int
         """
-        coins.sort()
-        res = float("inf")
-        for i in range(len(coins)):
-            c_i = len(coins)-1-i
-            cur_cnt = amount // coins[c_i]
-            cur = amount % coins[c_i]
-            tmp = cur_cnt
-            if cur == 0:
-                res = min(tmp, res)
+        dp = [float("inf")] * (amount+1)
+        dp[0] = 0
+        for i in range(0, amount+1):
+            for j in coins:
+                if j > i:
+                    continue
+                else:
+                    dp[i] = min(dp[i], dp[i-j]+1)
+        return dp[amount] if dp[amount] < float('inf') else -1
 
-            for j in range(1, c_i+1):
-                c_j = c_i - j
-                cur_cnt = cur // coins[c_j]
-                cur = cur % coins[c_j]
-                tmp += cur_cnt
-                if cur == 0:
-                    res = min(tmp, res)
-                    break
-        return res
 
-coins = [9, 5, 4, 1]
+coins = [9, 5]
 amount = 17
 print(Solution().coinChange(coins, amount))

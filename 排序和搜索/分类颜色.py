@@ -7,13 +7,21 @@ class Solution(object):
         i = 0
         j = 0
         k = len(nums)-1
-        while i<k:
-            if nums[i] == 0:
+        while j<=k:
+            if nums[j] == 0:
+                nums[i], nums[j] = nums[j], nums[i]
                 i += 1
+                j += 1
                 continue
 
-            if nums[i] == 1:
-                pass
+            if nums[j] == 1:
+                j += 1
+                continue
+
+            if nums[j] == 2:
+                nums[j], nums[k] = nums[k], nums[j]
+                k -= 1
+                continue
 
     def sortColors2(self, nums):
         i = -1
@@ -40,6 +48,6 @@ class Solution(object):
                 nums[k] = 2
 
 nums = [2, 0, 2, 2, 1, 1, 1, 0]
-Solution().sortColors2(nums)
+Solution().sortColors(nums)
 print(nums)
 
