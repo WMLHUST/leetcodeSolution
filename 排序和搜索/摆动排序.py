@@ -32,6 +32,7 @@ class Solution:
 
         res = nums[:]
         cur = 0
+        # 交叉选择的时候，要倒序开始，防止当中位数重复的时候，导致出现水平现象
         if (n&1) == 0:
             for i in range(0, n//2):
                 nums[cur] = res[n//2+i]
