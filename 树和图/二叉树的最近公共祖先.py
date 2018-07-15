@@ -6,6 +6,8 @@
 #         self.right = None
 
 class Solution:
+
+    # 不能处理p/q不在二叉树中的情况，可以先遍历一遍树
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
