@@ -29,4 +29,8 @@ class Solution(object):
 
         return x
 
-print(Solution().countAndSay(5))
+print(Solution().countAndSay(7))
+print(Solution().countAndSay(8))
+print(Solution().countAndSay(9))
+print(Solution().countAndSay(10))
+print(Solution().countAndSay(30))

@@ -1,6 +1,9 @@
 # coding: utf-8
 
 class Solution(object):
+
+    # 动态规划法
+    # 分治法，参考：https://blog.csdn.net/qqxx6661/article/details/78167981，单独计算一次包含中间节点在内的结果就可以了
     def maxSubArray(self, nums):
         """
         :type nums: List[int]
