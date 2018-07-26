@@ -32,3 +32,19 @@ class Solution:
                 tmp.append(level_stack[n-1].right)
 
             level_stack = tmp
+
+    # 递归解法，常数空间
+    def connect2(self, root):
+        if root == None or root.left==None:
+            return
+
+        root.left.next = root.right
+        if root.next != None:
+            root.right.next = root.next.left
+
+        self.connect(root.left)
+        self.connect(root.right)
+
+
+
+

@@ -1,3 +1,4 @@
+import copy
 class Solution:
     def permute(self, nums):
         """
@@ -16,5 +17,26 @@ class Solution:
 
         return res
 
-n = [1, 2]
-print(Solution().permute(n))
+    def permute2(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = []
+        for i in nums:
+            if len(res) == 0:
+                res = [[i]]
+            else:
+                tmp = []
+                for j in range(len(res[0])+1):
+                    for item in res:
+                        item_tmp = copy.deepcopy(item)
+                        item_tmp.insert(j, i)
+                        tmp.append(item_tmp)
+                res = tmp
+        return res
+
+n = [1, 2, 3, 4]
+res = Solution().permute2(n)
+print(len(res))
+print(res)

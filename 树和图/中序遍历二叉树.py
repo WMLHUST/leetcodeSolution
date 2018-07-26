@@ -15,11 +15,8 @@ class Solution:
         if root is None:
             return []
 
-        res_left = res_right = []
-        if root.left != None:
-            res_left = self.inorderTraversal(root.left)
-        if root.right != None:
-            res_right = self.inorderTraversal(root.right)
+        res_left = self.inorderTraversal(root.left)
+        res_right = self.inorderTraversal(root.right)
 
         return res_left + [root.val] + res_right
 
@@ -36,10 +33,28 @@ class Solution:
                 stack.append(cur)
                 cur = cur.left
 
+            # 此时到了此循环开始时，cur节点的最左子节点
             cur = stack.pop()
             res.append(cur.val)
             cur = cur.right
         return res
+
+    def inorderTraversal3(self, root):
+        stack = []
+        cur = root
+        res = []
+        while cur!=None:
+            while cur!=None:
+                stack.append(cur)
+                cur = cur.left
+
+            cur = stack.pop()
+            res.append(cur.val)
+            cur = cur.right
+
+        return res
+
+
 
 
 
