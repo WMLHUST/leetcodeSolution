@@ -2,6 +2,7 @@
 
 def firstUniqChar(s):
     n = len(s)
+    # tmp保存的是 字符:索引
     tmp = {}
     for i in range(0, n):
         if s[i] not in tmp:

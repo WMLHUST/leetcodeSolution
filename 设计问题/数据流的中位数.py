@@ -1,4 +1,6 @@
 import bisect
+
+# 正确的解法应该是用一个最大堆，最小堆，每次插入O(log(n))，每次计算O(1)
 class MedianFinder(object):
 
     def __init__(self):

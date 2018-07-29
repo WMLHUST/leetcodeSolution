@@ -5,6 +5,7 @@
 #         self.next = None
 
 class Solution:
+    # 先生成两个链表，然后再合并
     def oddEvenList(self, head):
         """
         :type head: ListNode
@@ -19,7 +20,7 @@ class Solution:
         cur2 = l2
 
         while cur1.next != None or cur2.next != None:
-            cur1.next = cur2.next
+            cur1.next = cur1.next.next
             cur1 = cur2.next
             cur2.next = cur2.next.next
             cur2 = cur2.next.next

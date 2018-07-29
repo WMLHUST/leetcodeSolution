@@ -9,6 +9,8 @@ class Solution(object):
 
         res = []
 
+        # 计算字符串左、右括号数量，如果左括号数量>右括号数量，就可以添加右括号，然后继续dfs
+        # 如果左括号数量<总长度，就可以添加左括号，实际可以结合右括号数量进一步限制，即左括号-右括号数量 < 总长度-左括号-右括号
         def dfs(left_cnt, right_cnt, tmp_res):
             if left_cnt==n and right_cnt==n:
                 res.append(tmp_res)
