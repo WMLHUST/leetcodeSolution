@@ -22,6 +22,7 @@ class Solution(object):
                 if right < intervals[i].end:
                     right = intervals[i].end
 
+            # 有边界一直更新到，与下一个区间无交叉
             if right < intervals[i].start:
                 res.append(Interval(left, right))
                 left = intervals[i].start

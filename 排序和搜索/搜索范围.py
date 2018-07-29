@@ -1,13 +1,17 @@
 # coding: utf-8
 class Solution(object):
+    # 1. 先找到target，存在的话继续找左右边界，不存在返回-1
+    # 2. 注意一些边界情况
     def searchRange(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
+
         def findSmall(nums, left, right):
             mid = (left + right) // 2
+            # 注意边界情况，在剩下两个数时会变成死循环，所以在剩下两个数时，不进入循环，左边判断左边是否target（尽可能左）
             while left+1 < right:
                 if nums[mid] == target:
                     right = mid
@@ -28,6 +32,7 @@ class Solution(object):
                     right = mid
 
                 mid = (left + right) // 2
+            # 右边尽可能右
             return right if nums[right]==target else left
 
         if len(nums) == 1:
@@ -60,6 +65,8 @@ class Solution(object):
                     left += 1
                 else:
                     mid = mid_tmp
+
+        # 注意判断结束时，索引的值。
         if left == right:
             return [left, left] if nums[left] == target else [-1, -1]
         return [res_start, res_end]

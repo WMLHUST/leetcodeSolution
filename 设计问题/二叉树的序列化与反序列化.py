@@ -8,6 +8,8 @@
 from public_tools.Tree.Tree import TreeNode
 
 class Codec:
+
+    # 后面会多两个None哦
     def serialize(self, root):
         """Encodes a tree to a single string.
 
@@ -70,5 +72,8 @@ class Codec:
         return root
 
 data = [1,2,3,None,None,4,5]
+root = Codec().deserialize(data)
+res = Codec().serialize(root)
+print(res)
 
 
