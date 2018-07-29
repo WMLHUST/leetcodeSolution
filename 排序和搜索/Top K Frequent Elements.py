@@ -16,12 +16,13 @@ class Solution(object):
         for k, v in cnt_dict.items():
             freq_list[v].append(k)
 
+        # 加一个空list，并不会导致res变长。
         res = []
         for item in freq_list[::-1]:
             res += item
 
         return res[:kMax]
 
-nums = [2]
-k = 1
+nums = [1,1,1,2,2,3]
+k = 2
 print(Solution().topKFrequent(nums, k))
