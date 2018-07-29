@@ -40,6 +40,27 @@ class Solution:
 
         return True
 
+    # 递归解法
+    def partition2(self, s):
+        """
+        :type s: str
+        :rtype: List[List[str]]
+        """
+
+        def isHuiwen(s):
+            return s == s[::-1]
+
+        # 递归结束条件
+        if len(s) == 0:
+            return [[]]
+
+        res = []
+        for i in range(1, len(s) + 1):
+            if isHuiwen(s[:i]):
+                tmp = self.partition(s[i:])
+                for item in tmp:
+                    res.append([s[:i]] + item)
+        return res
 
 s = "aab"
 print(Solution().partition(s))
