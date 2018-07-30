@@ -1,4 +1,6 @@
 class Solution:
+
+    # 两个指针一左一右，每次计算后，低的那边向中间移动，直到一个比它高
     def maxArea(self, height):
         """
         :type height: List[int]

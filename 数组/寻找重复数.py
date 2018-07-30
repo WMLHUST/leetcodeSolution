@@ -1,4 +1,6 @@
 class Solution:
+
+    # 这个会修改源数组，其实不符合要求
     def findDuplicate(self, nums):
         """
         :type nums: List[int]
@@ -17,7 +19,7 @@ class Solution:
                 nums[i] = nums[tmp]
                 nums[tmp] = tmp
 
-    # 这个也机智
+    # 这个也机智，但是涉及到大数，可能会溢出
     def findDuplicate2(self, nums):
         s = set(nums)
         coun = len(nums) - len(s)

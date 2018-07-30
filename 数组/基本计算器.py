@@ -30,7 +30,7 @@ class Solution:
                 i = next_num_l
 
 
-        # 先计算乘除
+        # 遍历一遍，先计算乘除，切记切记
         s = words
         hasCC = True
         i = 0

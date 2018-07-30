@@ -5,8 +5,8 @@ class ListNode:
         self.next = None
 from public_tools.Tree.Tree import TreeNode
 
-# 分治法，时间复杂度 n*log(n)*l
-# 如果直接遍历比较节点值，时间复杂度，n*l*n
+# 分治法，时间复杂度 n*log(n)*l，（要合并log(n)次，每层递归一共都是n*l个节点数，所以要n*l次，但是有log(n)层递归，所以一共n*l*log(n)）
+# 如果直接遍历比较节点值，时间复杂度，n*l*n，（n*l总节点数，每取一个最小节点，要比较n次）
 # n:链表个数，l链表平均长度
 class Solution:
     def mergeKLists(self, lists):

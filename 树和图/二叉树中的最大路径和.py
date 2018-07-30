@@ -7,6 +7,7 @@
 
 from public_tools.Tree.Tree import Tree
 
+# 注意节点值为None的时候，不能返回0，因为节点值会有负数，也不能返回无穷大，因为会和另一子树加起来。应该检查是否为None，为None的不进行计算。
 class Solution:
     def maxPathSum(self, root):
         """

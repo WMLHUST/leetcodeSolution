@@ -1,4 +1,6 @@
 class Solution:
+
+    # 不能使用相对位置存储的方法。。因为结果不一定都是从1开始的。
     def longestConsecutive(self, nums):
         """
         :type nums: List[int]

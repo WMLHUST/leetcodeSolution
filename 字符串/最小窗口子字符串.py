@@ -1,4 +1,7 @@
 class Solution:
+
+    # 维护两个指针，表明当前窗口
+    # 维护两个map，一个是t，一个是当前窗口内的字母计数，每次判断当前窗口内的字母是否满足条件
     def minWindow(self, s, t):
         """
         :type s: str
@@ -8,6 +11,7 @@ class Solution:
         s_char_dir = {}
         t_char_dir = {}
 
+        # t_char_dir 表明t的字母
         for c in t:
             t_char_dir[c] = t_char_dir.get(c, 0) + 1
 

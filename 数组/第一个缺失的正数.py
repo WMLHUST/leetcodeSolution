@@ -35,6 +35,7 @@ class Solution:
                 nums[i] = 0
                 i += 1
 
+        # 从1开始增加，下一个即缺失的第一个正数
         pre_Pos = 0
         for num in nums:
             if num <= 0:
