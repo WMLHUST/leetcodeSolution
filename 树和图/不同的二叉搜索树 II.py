@@ -5,6 +5,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# 这个题写的还不对。。。。
 class Solution:
     def generateTrees(self, n):
         """
