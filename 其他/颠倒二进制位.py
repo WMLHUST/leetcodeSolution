@@ -14,6 +14,7 @@ class Solution:
         nb2 = nb[::-1]
         return int(nb2, 2)
 
+    # 32位整数直接二进制化，逆序后会把左边的0丢掉，因此需要补全该信息。
     def reverseBits2(self, n):
         nb = bin(n)[:1:-1]
         nb2 = nb.ljust(32, '0')
