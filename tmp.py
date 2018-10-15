@@ -22,4 +22,4 @@ def binnarySearch(nums_ordered, cur):
 
 nums = [1, 2, 3, 4]
 cur = 4
-print(binnarySearch(nums, cur))
+print(binnarySearch(nums, cur)) 
