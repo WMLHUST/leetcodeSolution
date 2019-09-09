@@ -12,12 +12,12 @@ leetcode记录
 | 103  | **   | [二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal) |
 | 144  | **   | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) |
 | 145  | **   | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) |
-| 247  | **   | [中心对称数 II](https://leetcode-cn.com/problems/strobogrammatic-number-ii) |
+| 166  | **   | [分数到小数](https://leetcode-cn.com/problems/fraction-to-recurring-decimal) |
 | 139  | **   | [单词拆分](https://leetcode-cn.com/problems/word-break)      |
 | 198  | *    | [打家劫舍](https://leetcode-cn.com/problems/house-robber)    |
 | 213  | **   | [打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii) |
 | 264  | **   | [丑数 II](https://leetcode-cn.com/problems/ugly-number-ii)   |
-| 276  | *    | [栅栏涂色](https://leetcode-cn.com/problems/paint-fence)     |
+| 326  | *    | [3的幂](https://leetcode-cn.com/problems/power-of-three)     |
 | 202  | *    | [快乐数](https://leetcode-cn.com/problems/happy-number)      |
 | 231  | *    | [2的幂](https://leetcode-cn.com/problems/power-of-two)       |
 | 100  | *    | [相同的树](https://leetcode-cn.com/problems/same-tree)       |
