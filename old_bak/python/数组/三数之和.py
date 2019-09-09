@@ -9,8 +9,8 @@ class Solution(object):
 
         cache = {}
         for i in range(0, len(nums)):
-            if nums[i] in cache.values():
-                nums[i].append(i)
+            if nums[i] in cache.keys():
+                cache[nums[i]] = cache[nums[i]].append(i)
             else:
                 cache[nums[i]] = [i]
 
@@ -24,7 +24,7 @@ class Solution(object):
                         tmp.sort()
                         if tmp not in res:
                             res.append(tmp)
-        print(res)
+        # print(res)
         return res
 
     def threeSum2(self, nums):
@@ -68,5 +68,5 @@ class Solution(object):
 nums = [-1,0,1,2,-1,-4, 0, 1, 3]
 nums = [-1,0,1,2,-1,-4]
 # nums = [0, 0, 1, 1, 1, -1, -1, -1]
-nums = []
-print(Solution().threeSum2(nums))
+nums = [0,0,0]
+print(Solution().threeSum(nums))
