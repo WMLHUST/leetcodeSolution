@@ -11,7 +11,7 @@ leetcode记录
 | 226  | *    | [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree) |
 | 103  | **   | [二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal) |
 | 144  | **   | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) |
-| 145  | **   | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) |
+| 145  | ***  | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) |
 | 166  | **   | [分数到小数](https://leetcode-cn.com/problems/fraction-to-recurring-decimal) |
 | 139  | **   | [单词拆分](https://leetcode-cn.com/problems/word-break)      |
 | 198  | *    | [打家劫舍](https://leetcode-cn.com/problems/house-robber)    |
