@@ -5,20 +5,12 @@ leetcode记录
 
 | 序号 | 难度 | 题目                                                         |
 | ---- | ---- | ------------------------------------------------------------ |
-| 162  | **   | [寻找峰值](https://leetcode-cn.com/problems/find-peak-element) |
-| 167  | *    | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted) |
-| 141  | *    | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle) |
-| 226  | *    | [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree) |
-| 103  | **   | [二叉树的锯齿形层次遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal) |
-| 144  | **   | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) |
-| 145  | **   | [二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal) |
-| 166  | **   | [分数到小数](https://leetcode-cn.com/problems/fraction-to-recurring-decimal) |
-| 139  | **   | [单词拆分](https://leetcode-cn.com/problems/word-break)      |
-| 198  | *    | [打家劫舍](https://leetcode-cn.com/problems/house-robber)    |
-| 213  | **   | [打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii) |
-| 264  | **   | [丑数 II](https://leetcode-cn.com/problems/ugly-number-ii)   |
-| 326  | *    | [3的幂](https://leetcode-cn.com/problems/power-of-three)     |
-| 202  | *    | [快乐数](https://leetcode-cn.com/problems/happy-number)      |
-| 231  | *    | [2的幂](https://leetcode-cn.com/problems/power-of-two)       |
-| 100  | *    | [相同的树](https://leetcode-cn.com/problems/same-tree)       |
-
+| 106  | **   | [从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) |
+| 108  | *    | [将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/) |
+| 121  | *    | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) |
+| 122  | **   | [买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |
+| 123  | ***  | [买卖股票的最佳时机III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/) |
+| 129  | ** | [ 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) |
+| 129  | ** | [ 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) |
+| 67 | ** | [二进制求和](https://leetcode-cn.com/problems/add-binary/)|
+| 85 | *** | [最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
