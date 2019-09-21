@@ -11,6 +11,5 @@ leetcode记录
 | 122  | **   | [买卖股票的最佳时机II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |
 | 123  | ***  | [买卖股票的最佳时机III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/) |
 | 129  | ** | [ 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) |
-| 129  | ** | [ 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/) |
 | 67 | ** | [二进制求和](https://leetcode-cn.com/problems/add-binary/)|
 | 85 | *** | [最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
